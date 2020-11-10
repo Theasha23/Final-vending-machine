@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+</head>
+<body>
+    <h1>Vending Machine</h1>
+    <h2>Insert number of coins</h2>
+
+    <form style="margin-bottom: 10px;">
+        <span>50c</span><input type="text" name="50c" id="50c" placeholder="0" value="0" oninput="tally()">
+        <br />
+        <span>R1</span><input type="text" name="R1" id="R1" placeholder="0" value="0" oninput="tally()">
+        <br />
+        <span>R2</span><input type="text" name="R2" id="R2" placeholder="0" value="0" oninput="tally()">
+        <br />
+        <span>R5</span><input type="text" name="R5" id="R5" placeholder="0" value="0" oninput="tally()">
+    </form>
+    <h2>Select Item</h2>
+    <button style="margin-bottom: 10px;"><value="chips" id="chips" onclick = "dispenseitems(0)" onclick = "stockavailable()"></value>chips R10.50</R6></button>
+    <button><value="chips" id="coke" onclick = "dispenseitems(1)"></value>coke R10.50</button>
+    <button><value="chips" id="chocolate" onclick = "dispenseitems(2)"></value>chocolate R10.50</button>
+    <button><value="chips" id="sweets" onclick = "dispenseitems(3)"></value>sweets R10.50</button>
+<br />
+    <button ><value="chips" id="cancel" onclick="cancel()"></value>cancel</button>
+
+    <h2>Total Amount Entered: R<span id="paid"> 0.00</span></h2>
+
+    <h2 id="message"> Insert money first. Select a food item</h2>
+
+    <h3><span id = "stockDisplay" ></span></h3> 
+
+    <script src="vending.js"></script>
+</body>
+</html>
